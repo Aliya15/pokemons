@@ -1,0 +1,42 @@
+@import 'mixins';
+@import 'colors';
+
+.accordion {
+
+  &__title {
+    @include border;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    text-transform: capitalize;
+    background-color: $green;
+
+    .arrow {
+      margin: 0;
+      background: none;
+      border: solid black;
+      border-width: 0 2px 2px 0;
+      display: inline-block;
+      padding: 5px;
+      font-size: 16px;
+      line-height: 22px;
+      cursor: pointer;
+    }
+
+    .down {
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+    }
+
+    .up {
+      transform: rotate(-135deg);
+      -webkit-transform: rotate(-135deg);
+    }
+  }
+
+  &__content {
+    @include border;
+    border-top: none;
+  }
+}

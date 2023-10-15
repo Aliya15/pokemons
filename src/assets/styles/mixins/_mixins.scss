@@ -1,0 +1,16 @@
+@mixin border {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+@mixin flex-align($x: 0, $y: 0) {
+  display: flex;
+
+  @if $x != 0 {
+    align-items: $x;
+  }
+
+  @if $y != 0 {
+    justify-content: $y;
+  }
+}

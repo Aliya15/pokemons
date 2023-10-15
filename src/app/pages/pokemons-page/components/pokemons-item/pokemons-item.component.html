@@ -1,0 +1,11 @@
+<app-accordion *ngIf="title" [title]="title" (openAccordion)="createImageUrl($event)">
+  <div class="pokemon-image-container">
+    <img *ngIf="imageToShow$ | async as imageUrl"
+         [ngSrc]="imageUrl"
+         [alt]="title"
+         width="96"
+         height="96"
+         class="pokemon-image"
+    />
+  </div>
+</app-accordion>
