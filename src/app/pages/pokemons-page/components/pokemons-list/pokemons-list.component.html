@@ -1,0 +1,5 @@
+<app-pokemons-item
+  *ngFor="let pokemon of pokemonsList | async"
+  [imageUrl]="pokemon.url"
+  [title]="pokemon.name"
+></app-pokemons-item>
