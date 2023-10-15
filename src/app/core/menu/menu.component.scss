@@ -1,0 +1,12 @@
+@import 'mixins';
+
+:host {
+  width: 30%;
+}
+
+.menu {
+  @include border;
+  margin: 0;
+  height: 100%;
+  box-sizing: border-box;
+}
