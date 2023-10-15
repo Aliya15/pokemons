@@ -1,0 +1,6 @@
+@import 'mixins';
+
+.footer {
+  @include border;
+  margin: 0;
+}
